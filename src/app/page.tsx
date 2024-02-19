@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Header from "@/components/Header";
 import Experience from "@/components/Experience"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -73,7 +74,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="lg:basis-1/3 w-full">
-                    <button className="button whitespace-nowrap duration-500 inline-flex items-center justify-center bg-purple border border-purple font-bold hover:bg-purple-500 hover:border-purple-500 w-full">Access the list</button>
+                    <button className="button whitespace-nowrap duration-500 inline-flex items-center justify-center h-[44px] bg-purple border border-purple font-bold hover:bg-purple-500 hover:border-purple-500 w-full">Access the list</button>
                   </div>
                 </div>
               </div>
@@ -82,12 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="w-full">
-        <nav className="flex gap-10 items-center">
-          <a className="cursor-pointer">Terms of Service</a>
-          <a className="cursor-pointer">Privacy Policy</a>
-        </nav>
-      </footer>
+      <Footer />
     </main>
   );
 }

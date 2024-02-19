@@ -3,6 +3,7 @@ import Link from 'next/link'
 import NextLogo from '../../../public/vercel.svg';
 import ProfilePic from '../../../public/profilePicImage.jpeg'; // Import the image file
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -164,12 +165,7 @@ export default function Home() {
 </div>
 
 
-    <footer className="w-full">
-      <nav className="flex gap-10 items-center">
-        <a className="cursor-pointer">Terms of Service</a>
-        <a className="cursor-pointer">Privacy Policy</a>
-      </nav>
-    </footer>
+    <Footer />
 
 
     </main>

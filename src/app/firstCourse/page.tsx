@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import CustomModal from "@/components/CustomModal";
 import Checkout from "@/components/Checkout";
 import Video from "@/components/Video";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false)
@@ -396,12 +397,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="w-full">
-        <nav className="flex gap-10 items-center">
-          <a className="cursor-pointer">Terms of Service</a>
-          <a className="cursor-pointer">Privacy Policy</a>
-        </nav>
-      </footer>
+      <Footer />
     </main>
   );
 }

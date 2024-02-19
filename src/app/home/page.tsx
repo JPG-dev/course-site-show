@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import HomeCourse from "@/components/HomeCourse"
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState('all');
@@ -55,6 +56,7 @@ const Home = () => {
           )}
         </div>
       </section>
+      <Footer />
     </main>
   );
 };
