@@ -5,9 +5,8 @@ import Experience from "@/components/Experience"
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div style={{ background: "url(https://wallpapercave.com/wp/wp3624600.jpg)", backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+      <div style={{ background: `url(https://i.ibb.co/HCvgSJZ/hero.jpg)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', width: '100%' }}>
         <Header />
-
         <section className="container mx-auto px-8 lg:px-0 flex items-center text-center pt-40 pb-20">
           <div className="lg:w-3/4 mt-24 md:mt-0 mx-auto">
             <h1 className="text-5xl font-extrabold" style={{ lineHeight: '1.5' }}>
