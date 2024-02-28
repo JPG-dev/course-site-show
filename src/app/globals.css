@@ -6,6 +6,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --background-color: #000;
+  --pink-color: #EDAA9F;
+  --dark-blue-color: #364757;
+  --brown-color: #A17857;
+  --light-blue: #63B0D6;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +24,29 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--light-blue);
+  background-color: var(--background-color);
+}
+
+button, .button {
+  background: var(--pink-color);
+  color: var(--dark-blue-color);
+}
+
+button:hover {
+  opacity: 0.8
+}
+
+.hover:hover {
+  scale: 1.01
+}
+
+.home .tab {
+  background: var(--brown-color);
+}
+
+.home .tab.active {
+  background: var(--light-blue);
 }
 
 .container {
@@ -41,6 +64,10 @@ body {
   border-radius: 50%;
 }
 
+.bg {
+  background-color: var(--dark-blue-color);
+  color: var(--light-blue);
+}
 
 /* Modal Overlay */
 .modal-overlay {
@@ -67,10 +94,35 @@ body {
   width: 90%; /* Width can be adjusted */
 }
 
+.modal.sidebar {
+  top: 0;
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+
 .modal div input {
   width: 100%;
   padding: 8px;
 }
+
+.courses-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+}
+
+.course-card:hover {
+  scale: 1.01
+}
+
+@media only screen and (max-width: 600px) {
+  .courses-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  }
+}
+
+
 
 @layer utilities {
   .text-balance {

@@ -31,7 +31,7 @@ const SignUp = ({ setSelectedTab }: Props) => {
         <input type="password" placeholder="Password" ref={passwordRef} />
         </div>
         </div>
-        <button className='w-full bg-red-900 p-2 mt-6' onClick={handleSignUp}>Login</button>
+        <button className='w-full p-2 mt-6' onClick={handleSignUp}>Login</button>
 
 
         <p className='text-center mt-4'>Dont have an account? <span className='font-extrabold cursor-pointer' onClick={() => setSelectedTab('signUp')}>Sign Up</span></p>

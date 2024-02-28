@@ -9,11 +9,10 @@ interface Question {
 }
 
 interface Props {
-  backgroundColor: string;
   questions: Question[];
 }
 
-const MultipleChoice = ({ backgroundColor, questions }: Props) => {
+const MultipleChoice = ({ questions }: Props) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [answers, setAnswers] = useState<string[]>([]);
 
@@ -43,7 +42,7 @@ const MultipleChoice = ({ backgroundColor, questions }: Props) => {
   })
 
   return (
-    <div style={{ backgroundColor: backgroundColor }} className='p-8'>
+    <div className='p-8 multiple-choice bg'>
       {answers.length != questions.length ? questions.map((question, index) => (
         index === currentQuestionIndex && (
           <div key={question.id}>
@@ -51,8 +50,8 @@ const MultipleChoice = ({ backgroundColor, questions }: Props) => {
             <div className='text-3xl font-extrabold'>{question.text}</div>
             <ul>
               {question.options.map((option, optionIndex) => (
-                <li onClick={() => handleOptionSelect(option)} key={optionIndex} className='flex gap-6 items-center py-4 px-0 hover:bg-purple-900 cursor-pointer'>
-                  <div className='checkbox hover:bg-purple-500' />
+                <li onClick={() => handleOptionSelect(option)} key={optionIndex} className='flex gap-6 items-center py-4 px-0 cursor-pointer'>
+                  <div className='checkbox' />
                   <span>{option}</span>
                 </li>
               ))}

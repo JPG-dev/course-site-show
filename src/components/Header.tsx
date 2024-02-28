@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from 'next/link'
-import NextLogo from '../../public/next.svg';
 import Logo from '../../public/cropped-logo.png';
 import CustomModal from "@/components/CustomModal";
 import SignUpAndLogin from "@/components/SignUpAndLogin";
@@ -14,6 +13,7 @@ interface Props {
 const Header = ({ loggedIn }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
   const [isHamburgerOpen, setIsHamburgerOpen] = useState<boolean>(false)
+  const [isProfileDropdownOpen, setIsProfileDropdownActive] = useState<boolean>(false)
 
   useEffect(() => {
     if (isModalOpen) {
@@ -23,7 +23,7 @@ const Header = ({ loggedIn }: Props) => {
     document.body.style.overflow = 'auto';
   }, [isModalOpen])
 
-  let navLinksClassname = "absolute overflow-hidden top-full left-0 right-0 px-4 bg-dark-600 shadow-2xl duration-500 bg-purple-500";
+  let navLinksClassname = "absolute overflow-hidden top-full left-0 right-0 px-4 shadow-2xl duration-500";
   navLinksClassname = !isHamburgerOpen ? navLinksClassname + " hidden" : navLinksClassname
 
   return (
@@ -31,20 +31,19 @@ const Header = ({ loggedIn }: Props) => {
       <CustomModal isOpen={isModalOpen} setIsOpen={setIsModalOpen}>
         <SignUpAndLogin />
       </CustomModal>
-      <header className="absolute inset-x-0 z-10">
-
+      <header className="w-full inset-x-0 z-10" style={{ height: '130px', padding: '0 25px 0 10px' }}>
         <div className='container mx-auto'>
-          <div className='flex items-center justify-between py-2 px-4 lg:px-4'>
+          <div className='flex items-center justify-between lg:px-4 relative'>
             <Link href="/">
               <Image src={Logo} alt="logo" width={125} height={125} style={{ filter: 'brightness(105)' }} />
             </Link>
             <nav className="space-x-10 hidden lg:flex items-center">
               <Link href={"about"}>About Us</Link>
-              {loggedIn ? null : <button onClick={() => setIsModalOpen(true)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              {loggedIn ? null : <button onClick={() => setIsModalOpen(true)} className="font-bold py-2 px-4 rounded">
                 Sign up
               </button>}
-              {loggedIn ? <div id="avatar" className='relative h-10 w-10 bg-white text-black rounded-full cursor-pointer'>
-                <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black'>AJ</span>
+              {loggedIn ? <div id="avatar" className='relative h-10 w-10 bg-white rounded-full cursor-pointer' onClick={() => setIsProfileDropdownActive(!isProfileDropdownOpen)}>
+                <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '>AJ</span>
               </div> : null}
             </nav>
 
@@ -55,11 +54,27 @@ const Header = ({ loggedIn }: Props) => {
 
               <div className={navLinksClassname}>
                 <div className="group cursor-pointer">
-                <Link className='text-white p-4 block group-hover:text-orange duration-500' href={"about"}>About Us</Link>
+                  <Link className='p-4 block group-hover:text-orange duration-500' href={"about"}>About Us</Link>
                 </div>
                 <div className="p-4">
-                  <button onClick={() => setIsModalOpen(true)} className="button whitespace-nowrap duration-500 inline-flex items-center justify-center bg-purple font-bold hover:bg-purple-500 hover:border-purple-500">Sign up</button>
+                  <button onClick={() => setIsModalOpen(true)} className="button whitespace-nowrap duration-500 inline-flex items-center justify-center font-bold">Sign up</button>
                 </div>
+              </div>
+            </nav>
+
+            <nav className="grid gap-2 absolute right-0" style={{ top: '105px', display: `${isProfileDropdownOpen ? 'block' : 'none'}` }}>
+              <div className="active selected item p-2 hover:opacity-80">
+                <Link href="/setting">Profile</Link>
+              </div>
+
+              <div className="item p-2 hover:opacity-80">
+                <Link href="/setting/account">My Account</Link>
+              </div>
+              <div className="item p-2 hover:opacity-80">
+                <Link href="/setting/password">Password</Link>
+              </div>
+              <div className="item p-2 hover:opacity-80">
+                <a className="text d-block">Logout</a>
               </div>
             </nav>
           </div>
