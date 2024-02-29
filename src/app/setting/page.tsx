@@ -52,7 +52,7 @@ const Setting = () => {
                 <div className="metadata-content" style={{ width: '100%', height: '100%' }}>
                     <div className='text-left' style={{ height: '7%' }}>
                         <div className='mb-2'>Settings</div>
-                        <div className='text-2xl bold'>{selectedTab.charAt(0).toUpperCase() + selectedTab.slice(1)}</div>
+                        <h3 className='text-2xl bold'>{selectedTab.charAt(0).toUpperCase() + selectedTab.slice(1)}</h3>
                     </div>
                     <div className='content bg' style={{ height: containerHeight, padding: '30px', borderRadius: '10px' }}>
                         {selectedTab === "profile" ? <Profile /> : null}

@@ -9,9 +9,9 @@ const Module = () => {
     <div className='module border hover cursor-pointer rounded' style={{ padding: '15px' }}>
       <div className='flex justify-between items-center'>
         <div className='mr-8'>
-          <div className='bold'>
+          <h4 className='bold'>
             Module 1: Southeast Asia is not Silicon Valley
-          </div>
+          </h4>
           <p className='mt-5'>Introduction to Venture Capital</p>
         </div>
 

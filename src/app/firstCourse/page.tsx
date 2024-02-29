@@ -31,9 +31,9 @@ export default function Home() {
 
       <section className="py-12">
         <div className="container mx-auto px-8 lg:px-0">
-          <div className="text-3xl font-extrabold text-center">
+          <h2 className="text-3xl font-extrabold text-center">
             Know your mentors
-          </div>
+          </h2>
           <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-x-9 gap-y-8 my-14">
             <div className="flex lg:block space-x-4 lg:space-x-0">
               <div className="basis-1/2">
@@ -108,9 +108,9 @@ export default function Home() {
 
       <section className="py-8 px-8 lg:px-0 w-full">
         <div className="container mx-auto">
-          <div className="text-3xl font-extrabold text-center mb-4">
+          <h2 className="text-3xl font-extrabold text-center mb-4">
             Lets try out your personality
-          </div>
+          </h2>
           <MultipleChoice questions={[
             { id: 1, text: 'What is 2+2', options: ['4', '5', '6'], answer: "4" },
             { id: 2, text: 'What is 4*4', options: ['14', '16', '19'], answer: "16" },
@@ -121,9 +121,9 @@ export default function Home() {
 
       <section className="py-8 px-8 lg:px-0 w-full">
         <div className="container mx-auto">
-          <div className="text-3xl font-extrabold text-center mb-4">
+          <h2 className="text-3xl font-extrabold text-center mb-4">
             Numerical Answer
-          </div>
+          </h2>
           <NumericalAnswer question="What's 3*3" answer="9" />
         </div>
       </section>
@@ -136,7 +136,7 @@ export default function Home() {
 
             <div className="w-full lg:w-1/3">
               <div className="bg shadow-xl rounded p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
-                <div className="font-bold font-display text-center mb-2 uppercase">BASIC PACKAGE</div>
+                <h3 className="font-bold font-display text-center mb-2 uppercase">BASIC PACKAGE</h3>
                 <div className="flex items-center justify-center">
                   <div className="text-xl mr-4 line-through">$299</div>
                   <div className=" text-4xl flex items-start  font-bold">
@@ -197,7 +197,7 @@ export default function Home() {
             <div className="w-full lg:w-1/3">
               <div className="bg shadow-xl rounded p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
                 <div className="px-3 py-1 absolute text-sm top-0 left-0 ml-2 mt-2 rounded">Most Popular</div>
-                <div className="font-bold font-display text-center mb-2 uppercase">Complete Package</div>
+                <h3 className="font-bold font-display text-center mb-2 uppercase">Complete Package</h3>
                 <div className="flex items-center justify-center">
                   <div className="text-xl mr-4 line-through">$299</div>
                   <div className=" text-4xl flex items-start  font-bold">
@@ -257,7 +257,7 @@ export default function Home() {
             <div className="w-full lg:w-1/3">
               <div className="bg shadow-xl rounded p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
                 <div className="px-3 py-1 absolute text-sm top-0 left-0 ml-2 mt-2 rounded">Most Popular</div>
-                <div className="font-bold font-display text-center mb-2 uppercase">Complete Package</div>
+                <h3 className="font-bold font-display text-center mb-2 uppercase">Complete Package</h3>
                 <div className="flex items-center justify-center">
                   <div className="text-xl mr-4 line-through">$299</div>
                   <div className=" text-4xl flex items-start  font-bold">

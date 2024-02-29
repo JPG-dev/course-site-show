@@ -34,7 +34,7 @@ export default function Home() {
         {/* About */}
         <div className="lg:flex-1 animate-fade-in-right-little">
           <div id="about" className="pb-20">
-            <div className="text-5xl font-extrabold" style={{ paddingBottom: '20px' }}>ABOUT US</div>
+            <h2 className="text-5xl font-extrabold" style={{ paddingBottom: '20px' }}>ABOUT US</h2>
             <div className="text-paragraph">
               <span>Insignia Ventures Academy (IVA) is a private education institution that offers programs and courses that provides the opportunity for individuals to get a headstart in building a track record in the startup space.</span>
               <br />
@@ -51,7 +51,7 @@ export default function Home() {
 
           <section id="chart" className="pt-8">
             <div className="pb-8">
-              <div className="text-5xl font-extrabold">Organizational Chart</div>
+              <h2 className="text-5xl font-extrabold">Organizational Chart</h2>
               <div className="space-y-4">
                 <div className="lg:flex items-center lg:space-x-20">
                   <div className="basis-3/12 mb-4 lg:mb-0">Senior Management and Board</div>
@@ -83,7 +83,7 @@ export default function Home() {
           </section>
 
           <section id="board" className="py-8">
-            <div id="board" className="text-5xl font-extrabold mb-5">Senior Management and Board</div>
+            <h2 id="board" className="text-5xl font-extrabold mb-5">Senior Management and Board</h2>
             <div className="space-y-8">
               <div className="flex flex-col md:flex-row md:space-x-8">
                 <Image src={ProfilePic} alt="Tan Yinglan" className="rounded-md self-stretch" />
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
           </section>
           <section id="managers" className="py-8">
-            <div className="text-5xl font-extrabold mb-5">Managers</div>
+            <h2 className="text-5xl font-extrabold mb-5">Managers</h2>
             <div className="text-base mb-8">Insignia Ventures Academy’s PEI Managers oversee the proper functioning of the PEI. They play an important role in maintaining the standards in corporate governance and information disclosure.</div>
             <div className="space-y-4">
               <div className="flex justify-between">
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
           </section>
           <section id="teachers" className="py-16">
-            <div className="text-5xl font-extrabold mb-5">Teachers</div>
+            <h2 className="text-5xl font-extrabold mb-5">Teachers</h2>
             <div className="space-y-8">
               <div className="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 w-full justify-between">
                 <Image src={ProfilePic} alt="Tan Yinglan" className="rounded-md self-stretch" />

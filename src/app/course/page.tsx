@@ -18,7 +18,7 @@ const page = () => {
           }}
         >
           <div className='flex justify-between items-center mb-6'>
-            <div className='text-3xl font-bold'>Venture Capital Launchpad</div>
+            <h2 className='text-3xl font-bold'>Venture Capital Launchpad</h2>
 
             <Link
               className='button'
@@ -41,7 +41,7 @@ const page = () => {
             youve begun to the next level, if you are hungry for more.
           </p>
 
-          <div className='text-3xl mb-5 font-bold'>Modules</div>
+          <h3 className='text-3xl mb-5 font-bold'>Modules</h3>
 
           <p className='font-bold mb-5'>Venture Capital Fundamentals</p>
 

@@ -16,7 +16,7 @@ const SignUp = ({ setSelectedTab }: Props) => {
 
   return (
     <>
-    <div className='text-3xl font-extrabold text-center mb-5'>Create an account</div>
+    <h2 className='text-3xl font-extrabold text-center mb-5'>Create an account</h2>
         <div className="grid gap-5">
         <div>
         <p>Email <span>*</span></p>

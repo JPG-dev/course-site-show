@@ -20,10 +20,10 @@ const Checkout = () => {
       <Header loggedIn={true} />
 
       <section className='container mx-auto px-8 lg:px-0 flex items-center justify-center text-center pt-40 pb-20'>
-        <div className='form-container p-4'>
+        <div className='form-container p-12 bg'>
           <form
             onSubmit={handleSubmit}
-            style={{ backgroundColor: 'purple', maxWidth: '800px' }}
+            style={{ maxWidth: '800px' }}
           >
             <h2 className='text-xl font-bold mb-4'>Enter Payment Details</h2>
             <div className='mb-4'>

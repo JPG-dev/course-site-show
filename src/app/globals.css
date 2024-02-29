@@ -7,11 +7,11 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --background-color: #000;
-  --pink-color: #EDAA9F;
-  --dark-blue-color: #364757;
-  --brown-color: #A17857;
-  --light-blue: #63B0D6;
+  --background-color: #0B0C10;
+  --coal-color: #1F2833;
+  --gray-color: #C5C6C7;
+  --teal-color: #66FCF1;
+  --darker-teal: #45A29E;
 
 }
 
@@ -24,13 +24,14 @@
 }
 
 body {
-  color: var(--light-blue);
+  color: var(--gray-color);
   background-color: var(--background-color);
 }
 
 button, .button {
-  background: var(--light-blue);
-  color: var(--dark-blue-color);
+  background: var(--darker-teal);
+  color: var(--coal-color);
+  font-weight: 800;
 }
 
 button:hover {
@@ -41,13 +42,18 @@ button:hover {
   scale: 1.01
 }
 
+h1, h2, h3, h4, h5 {
+  color: var(--teal-color);
+}
+
 .home .tab {
-  background: var(--dark-blue-color);
-  color: var(--pink-color);
+  background-color: var(--coal-color);
+  color: var(--gray-color);
 }
 
 .home .tab.active {
-  background: var(--light-blue);
+  background-color: var(--teal-color);
+  color: var(--background-color);
 }
 
 .container {
@@ -66,16 +72,16 @@ button:hover {
 }
 
 .bg {
-  background-color: var(--dark-blue-color);
-  color: var(--light-blue);
+  background-color: var(--coal-color);
+  color: var(--gray-color);
 }
 
 .module {
-  border-color: var(--light-blue);
+  border-color: var(--teal-color);
 }
 
 .module .circle {
-  background-color: var(--light-blue);
+  background-color: var(--teal-color);
 }
 
 /* Modal Overlay */
@@ -95,8 +101,8 @@ button:hover {
 /* Modal */
 .modal {
   position: relative;
-  background-color: var(--dark-blue-color);
-  color: var(--light-blue);
+  background-color: var(--coal-color);
+  color: var(--gray-color);
   padding: 45px 20px 20px 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */

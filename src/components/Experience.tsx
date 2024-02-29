@@ -4,9 +4,9 @@ const Experience = () => {
   return (
     <section className='mt-16 lg:py-8 px-8 lg:px-0'>
       <div className='container mx-auto text-center'>
-        <div className='text-3xl font-extrabold mb-5'>
+        <h2 className='text-3xl font-extrabold mb-5'>
           GROW ONWARDS AND UPWARDS
-        </div>
+        </h2>
         <div className='text-paragraph md:w-1/2 mx-auto mb-10'>
           Leverage the community, learnings, resources and new experiences
           gained here to develop your skills as an investor, founder and
