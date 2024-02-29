@@ -22,10 +22,10 @@ const HomeCourse = ({ own, price }: Props) => {
       </ul>
 
       {
-        own ? <Link href="/course" className="px-4 py-2 rounded-md w-full mt-auto text-center">
+        own ? <Link href="/course" className="px-4 py-2 rounded-md w-full mt-auto text-center button">
         {buttonText}
       </Link> :
-          <Link href="/checkout" className="px-4 py-2 rounded-md w-full mt-auto text-center">
+          <Link href="/checkout" className="px-4 py-2 rounded-md w-full mt-auto text-center button">
             {buttonText}
           </Link>
       }

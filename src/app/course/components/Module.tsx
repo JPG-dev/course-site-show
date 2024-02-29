@@ -6,7 +6,7 @@ const Module = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='border border-black' style={{ padding: '15px' }}>
+    <div className='module border hover cursor-pointer' style={{ padding: '15px' }}>
       <div className='flex justify-between items-center'>
         <div className='mr-8'>
           <div className='bold'>

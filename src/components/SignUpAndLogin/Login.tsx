@@ -18,10 +18,6 @@ const SignUp = ({ setSelectedTab }: Props) => {
     <>
     <div className='text-3xl font-extrabold text-center mb-5'>Login</div>
         <div className="grid gap-5">
-          <div>
-          <p>Name <span>*</span></p>
-          <input type="text" placeholder="Name" ref={nameRef}/>
-          </div>
         <div>
         <p>Email <span>*</span></p>
         <input type="email" placeholder="Email" ref={emailRef} />

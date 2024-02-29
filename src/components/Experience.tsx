@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <section className='mt-8 lg:mt-0 lg:py-8 px-8 lg:px-0'>
+    <section className='mt-16 lg:py-8 px-8 lg:px-0'>
       <div className='container mx-auto text-center'>
         <div className='text-3xl font-extrabold mb-5'>
           GROW ONWARDS AND UPWARDS

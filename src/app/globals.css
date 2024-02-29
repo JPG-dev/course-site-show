@@ -29,7 +29,7 @@ body {
 }
 
 button, .button {
-  background: var(--pink-color);
+  background: var(--light-blue);
   color: var(--dark-blue-color);
 }
 
@@ -69,6 +69,14 @@ button:hover {
   color: var(--light-blue);
 }
 
+.module {
+  border-color: var(--light-blue);
+}
+
+.module .circle {
+  background-color: var(--light-blue);
+}
+
 /* Modal Overlay */
 .modal-overlay {
   z-index: 99;
@@ -86,7 +94,8 @@ button:hover {
 /* Modal */
 .modal {
   position: relative;
-  background-color: #492649;
+  background-color: var(--dark-blue-color);
+  color: var(--light-blue);
   padding: 45px 20px 20px 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */

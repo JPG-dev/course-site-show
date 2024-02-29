@@ -6,7 +6,7 @@ const Profile = () => {
             <div className="field upload_field mb-5 text-center">
                 <label className="margin-center">
                     <img src="https://lh3.googleusercontent.com/a/ACg8ocLa6KafS6NHjyuKdSG1sPWdx4V4Xv4BtKR840CMX4h2aXk=s96-c" width="120" height="120" alt="" className="object-fit-cover cursor-pointer rounded-full mx-auto" />
-                    <span className="ui basic primary button cursor-pointer inline-block text-center border border-white p-2 md:p-3 my-3 font-bold rounded-md">Replace profile image</span>
+                    <span className="ui basic primary button cursor-pointer inline-block text-center p-2 md:p-3 my-3 font-bold rounded-md">Replace profile image</span>
                     <input type="file" className="hidden" id="profile_picture" accept="image/*" />
                 </label>
             </div>

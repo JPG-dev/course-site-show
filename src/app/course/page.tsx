@@ -18,7 +18,7 @@ const page = () => {
           }}
         >
           <div className='flex justify-between items-center mb-6'>
-            <div className='text-3xl bold'>Venture Capital Launchpad</div>
+            <div className='text-3xl font-bold'>Venture Capital Launchpad</div>
 
             <Link
               className='button'
@@ -41,7 +41,9 @@ const page = () => {
             youve begun to the next level, if you are hungry for more.
           </p>
 
-          <div className='text-3xl mb-5'>Modules</div>
+          <div className='text-3xl mb-5 font-bold'>Modules</div>
+
+          <p className='font-bold mb-5'>Venture Capital Fundamentals</p>
 
           <div className='grid gap-10'>
             <Module />
@@ -49,6 +51,19 @@ const page = () => {
             <Module />
             <Module />
           </div>
+
+
+          <p className='font-bold mb-5 mt-5'>Portfolio Management</p>
+
+          <div className='grid gap-10'>
+            <Module />
+            <Module />
+            <Module />
+            <Module />
+          </div>
+
+
+
         </div>
       </section>
 

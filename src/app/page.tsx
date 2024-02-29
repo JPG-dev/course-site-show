@@ -59,12 +59,12 @@ export default function Home() {
       </section>
 
       <section className="py-8 px-8 lg:px-0">
-        <div className="text-3xl font-extrabold text-center">NEED A HAND?</div>
+        <div className="text-3xl font-extrabold text-center mb-5">NEED A HAND?</div>
         <div className="md:w-1/2 text-center text-paragraph mx-auto">Check out our free resources that help propel your startup or career forward.</div>
-        <div className="my-16">
-          <div className="p-8 md:py-[35px] md:px-[65px] rounded lg:w-2/3 mx-auto my-16">
-            <div>
-              <div className="lg:basis-9/12 flex flex-col justify-between">
+        
+          <div className="p-8 md:py-[35px] md:px-[65px] rounded lg:w-2/3 mx-auto my-8">
+            
+              <div className="lg:basis-9/12 flex flex-col justify-between bg" style={{ padding: '25px' }}>
                 <div className="text-3xl font-extrabold text-center  text-32px mb-4 text-center lg:text-left">Funds, Accelerators &amp; Incubators</div>
                 <div className=" font-base mb-8 text-center lg:text-left">Get an overview of the players in the startup ecosystem (Southeast Asia and beyond) and decide which provides the most value-add for your company.</div>
                 <div className="flex items-start flex-col lg:flex-row lg:space-y-0 space-y-4 lg:space-x-8">
@@ -78,9 +78,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            
           </div>
-        </div>
+        
       </section>
 
       <Footer />

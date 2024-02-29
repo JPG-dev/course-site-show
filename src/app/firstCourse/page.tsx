@@ -106,7 +106,6 @@ export default function Home() {
         </div>
       </section>
 
-
       <section className="py-8 px-8 lg:px-0 w-full">
         <div className="container mx-auto">
           <div className="text-3xl font-extrabold text-center mb-4">
@@ -119,7 +118,6 @@ export default function Home() {
           ]} />
         </div>
       </section>
-
 
       <section className="py-8 px-8 lg:px-0 w-full">
         <div className="container mx-auto">
@@ -137,7 +135,7 @@ export default function Home() {
 
 
             <div className="w-full lg:w-1/3 bg">
-              <div className="shadow-xl rounded-lg p-8 pt-10 relative mb-8 lg:mb-0">
+              <div className="shadow-xl rounded-lg p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
                 <div className="font-bold font-display text-center mb-2 uppercase">BASIC PACKAGE</div>
                 <div className="flex items-center justify-center">
                   <div className="text-xl mr-4 line-through">$299</div>
@@ -196,7 +194,7 @@ export default function Home() {
             </div>
 
             <div className="w-full lg:w-1/3 bg">
-              <div className="shadow-xl rounded-lg p-8 pt-10 relative mb-8 lg:mb-0">
+              <div className="shadow-xl rounded-lg p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
                 <div className="px-3 py-1 absolute text-sm top-0 left-0 ml-2 mt-2 rounded">Most Popular</div>
                 <div className="font-bold font-display text-center mb-2 uppercase">Complete Package</div>
                 <div className="flex items-center justify-center">
@@ -256,47 +254,44 @@ export default function Home() {
             </div>
 
             <div className="w-full lg:w-1/3 bg">
-              <div className="shadow-xl rounded-lg p-8 pt-10 relative"><div className="px-3 py-1 absolute text-sm top-0 left-0 ml-2 mt-2 rounded">Best Value</div>
-                <div className="font-bold font-display text-center mb-2 uppercase">Premium Package</div>
+              <div className="shadow-xl rounded-lg p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
+                <div className="px-3 py-1 absolute text-sm top-0 left-0 ml-2 mt-2 rounded">Most Popular</div>
+                <div className="font-bold font-display text-center mb-2 uppercase">Complete Package</div>
                 <div className="flex items-center justify-center">
-                  <div className="text-xl mr-4 line-through">$399</div>
+                  <div className="text-xl mr-4 line-through">$299</div>
                   <div className=" text-4xl flex items-start  font-bold">
-                    <span className="text-2xl">$</span>297</div>
-                </div>
-                <div className="my-6">
-                  <div className="flex mb-3"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div className="ml-2"><span className="font-bold">Everything in the Complete Package</span>
+                    <span className="text-2xl">$</span>197</div>
+                </div><div className="my-6 ">
+                  <div className="flex mb-3">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                    </div>
+                    <div className="ml-2"
+                    ><span className="font-bold">Everything in the Basic Package</span>
                     </div>
                   </div>
                   <div className="flex mb-3"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                    <div className="ml-2">Entire
+                      <span className="font-bold">JavaScript Simplified - Advanced</span> course</div>
                   </div>
-                    <div className="ml-2">Just under
-                      <span className="font-bold">40 hours</span> of content across <span className="font-bold">150 videos</span>
+                  <div className="flex mb-3"><div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                    <div className="ml-2">Over <span className="font-bold">27 hours</span> of content across <span className="font-bold">140 videos</span>
                     </div>
                   </div>
                   <div className="flex mb-3"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  </div>
-                    <div className="ml-2">
-                      <span className="font-bold">Six large bonus projects</span>
-                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                    <div className="ml-2">Download all videos for <span className="font-bold">offline access</span></div>
                   </div>
                   <div className="flex mb-3"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  </div>
-                    <div className="ml-2">Four interviews with successful self-taught developers on
-                      <span className="font-bold">how to land your first job</span>
-                    </div>
-                  </div>
-                  <div className="flex mb-3"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
                     <div className="ml-2">Before and after source code for all projects</div>
                   </div>
                   <div className="flex mb-3"><div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className=" w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
                     <div className="ml-2">Exclusive access to private Discord community</div>
                   </div>
                   <div className="flex mb-3"><div>
@@ -315,7 +310,16 @@ export default function Home() {
                     <div className="ml-2">Lifetime access</div>
                   </div>
                 </div>
-                <button onClick={() => setIsOpen(true)} data-podia-embed="link" className="w-full block text-center px-6 py-4 rounded font-bold" data-initialized="true">Buy Now</button></div></div>
+                <button onClick={() => setIsOpen(true)} data-podia-embed="link" className="w-full block text-center px-6 py-4 rounded font-bold" data-initialized="true">Buy Now</button></div>
+            </div>
+
+
+
+
+
+
+
+
           </div>
         </div>
       </section>
