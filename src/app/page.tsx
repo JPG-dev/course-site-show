@@ -41,7 +41,7 @@ export default function Home() {
                 <div className="text-sm font-bold">SELF-PACED ONLINE MASTERCLASS</div>
                 <div className="text-32px py-6 font-bold  g">6-Month VC Launchpad</div>
                 <div className="text-base">Enroll in our online course designed for emerging investors seeking to pick up venture capital fundamentals at their own pace. Get access to over 30 hours of video content, exercises and materials curated by industry veterans to hit the ground running as you kickstart your early-stage investing journey. </div>
-                <div className="text-base font-bold mt-6">LEARN MORE</div>
+                <div className="text-base font-bold mt-6 text-center button py-2 px-4 rounded">LEARN MORE</div>
               </div>
             </Link>
 
@@ -51,7 +51,7 @@ export default function Home() {
                 <div className="text-sm font-bold">SELF-PACED ONLINE MASTERCLASS</div>
                 <div className="text-32px py-6 font-bold">6-Month VC Launchpad</div>
                 <div className="text-base">Enroll in our online course designed for emerging investors seeking to pick up venture capital fundamentals at their own pace. Get access to over 30 hours of video content, exercises and materials curated by industry veterans to hit the ground running as you kickstart your early-stage investing journey. </div>
-                <div className="text-base font-bold mt-6">LEARN MORE</div>
+                <div className="text-base font-bold mt-6 text-center button py-2 px-4 rounded">LEARN MORE</div>
               </div>
             </Link>
           </div>
@@ -63,8 +63,7 @@ export default function Home() {
         <div className="md:w-1/2 text-center text-paragraph mx-auto">Check out our free resources that help propel your startup or career forward.</div>
         
           <div className="p-8 md:py-[35px] md:px-[65px] rounded lg:w-2/3 mx-auto my-8">
-            
-              <div className="lg:basis-9/12 flex flex-col justify-between bg" style={{ padding: '25px' }}>
+              <div className="lg:basis-9/12 flex flex-col justify-between bg p-12 rounded">
                 <div className="text-3xl font-extrabold text-center  text-32px mb-4 text-center lg:text-left">Funds, Accelerators &amp; Incubators</div>
                 <div className=" font-base mb-8 text-center lg:text-left">Get an overview of the players in the startup ecosystem (Southeast Asia and beyond) and decide which provides the most value-add for your company.</div>
                 <div className="flex items-start flex-col lg:flex-row lg:space-y-0 space-y-4 lg:space-x-8">

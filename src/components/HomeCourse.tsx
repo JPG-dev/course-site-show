@@ -14,7 +14,7 @@ const HomeCourse = ({ own, price }: Props) => {
     <div className="flex flex-col p-4 rounded-md border border-blue-500  course-card cursor-pointer">
       <div className="text-3xl font-extrabold mb-4">Venture Capital Launchpad</div>
       <p className="mb-4">Light yet substantive introduction exposure to the world of venture capital in Southeast Asia:</p>
-      <ul className="list-disc list-inside mb-4 pb-10">
+      <ul className="list-disc list-inside mb-4 pb-5">
         <li>3 or 6 months access</li>
         <li>13 core modules and hands-on activities</li>
         <li>5+ hours of explainer videos</li>

@@ -134,8 +134,8 @@ export default function Home() {
           <div className="flex justify-center items-center flex-col lg:flex-row gap-5">
 
 
-            <div className="w-full lg:w-1/3 bg">
-              <div className="shadow-xl rounded-lg p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
+            <div className="w-full lg:w-1/3">
+              <div className="bg shadow-xl rounded p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
                 <div className="font-bold font-display text-center mb-2 uppercase">BASIC PACKAGE</div>
                 <div className="flex items-center justify-center">
                   <div className="text-xl mr-4 line-through">$299</div>
@@ -190,11 +190,12 @@ export default function Home() {
                     <div className="ml-2">Lifetime access</div>
                   </div>
                 </div>
-                <button onClick={() => setIsOpen(true)} data-podia-embed="link" className="w-full block text-center px-6 py-4 rounded font-bold" data-initialized="true">Buy Now</button></div>
+                <button onClick={() => setIsOpen(true)} data-podia-embed="link" className="w-full block text-center px-6 py-4 rounded font-bold" data-initialized="true">Buy Now</button>
+                </div>
             </div>
 
-            <div className="w-full lg:w-1/3 bg">
-              <div className="shadow-xl rounded-lg p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
+            <div className="w-full lg:w-1/3">
+              <div className="bg shadow-xl rounded p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
                 <div className="px-3 py-1 absolute text-sm top-0 left-0 ml-2 mt-2 rounded">Most Popular</div>
                 <div className="font-bold font-display text-center mb-2 uppercase">Complete Package</div>
                 <div className="flex items-center justify-center">
@@ -253,8 +254,8 @@ export default function Home() {
                 <button onClick={() => setIsOpen(true)} data-podia-embed="link" className="w-full block text-center px-6 py-4 rounded font-bold" data-initialized="true">Buy Now</button></div>
             </div>
 
-            <div className="w-full lg:w-1/3 bg">
-              <div className="shadow-xl rounded-lg p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
+            <div className="w-full lg:w-1/3">
+              <div className="bg shadow-xl rounded p-8 pt-10 relative mb-8 lg:mb-0 flex flex-col">
                 <div className="px-3 py-1 absolute text-sm top-0 left-0 ml-2 mt-2 rounded">Most Popular</div>
                 <div className="font-bold font-display text-center mb-2 uppercase">Complete Package</div>
                 <div className="flex items-center justify-center">

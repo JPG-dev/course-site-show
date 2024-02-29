@@ -28,7 +28,7 @@ const NumericalAnswer = ({ question, answer }: Props) => {
   }
 
   return (
-    <div className='p-8 bg'>
+    <div className='bg p-12 rounded'>
       {hasCorrectAnswer ? <p className='text-3xl text-center'>Well done! <span className='font-extrabold cursor-pointer' onClick={() => resetAnswer()}>click here to try again</span></p> :
       (<>
       <p className='text-3xl font-extrabold text-center mb-4'>{question}</p>

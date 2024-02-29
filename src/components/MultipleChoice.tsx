@@ -42,7 +42,7 @@ const MultipleChoice = ({ questions }: Props) => {
   })
 
   return (
-    <div className='p-8 multiple-choice bg'>
+    <div className='multiple-choice bg p-12 rounded'>
       {answers.length != questions.length ? questions.map((question, index) => (
         index === currentQuestionIndex && (
           <div key={question.id}>

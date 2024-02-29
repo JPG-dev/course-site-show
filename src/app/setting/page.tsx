@@ -6,6 +6,7 @@ import Image from "next/image";
 import Profile from './components/Profile';
 import CustomModal from "@/components/CustomModal";
 import Logo from '../../../public/cropped-logo.png';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 
 const Setting = () => {
     const [selectedTab, setSelectedTab] = useState<string>("profile")
@@ -43,10 +44,10 @@ const Setting = () => {
                     }} className={`rounded-md row cursor-pointer mx-auto p-2 ${selectedTab === 'password' ? 'button' : ''}`} style={{ width: '90%' }}>Password</div>
                 </CustomModal>
                 
-
-                <button className="sidebar block md:hidden" onClick={() => toggleSidebar()}>
-                    OPEN SIDEBAR
-                </button>
+                    <div className='block md:hidden w-full text-left'>
+                    <MenuBookIcon className="sidebar cursor-pointer" onClick={() => toggleSidebar()} style={{ width: '30px', height: '30px' }}  />
+                    </div>
+                
 
                 <div className="metadata-content" style={{ width: '100%', height: '100%' }}>
                     <div className='text-left' style={{ height: '7%' }}>
@@ -59,7 +60,7 @@ const Setting = () => {
                             <div className="text-left mb-5">
                                 <label>EMAIL</label>
                                 <div className="ui input">
-                                    <input className='w-full p-2' placeholder="Input your email" name="email" id="email" type="text" value="jpgtv19@gmail.com" />
+                                    <input className='w-full p-2' placeholder="Input your email" name="email" id="email" type="text"/>
                                 </div>
                             </div>
 
