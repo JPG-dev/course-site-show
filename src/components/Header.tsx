@@ -65,7 +65,7 @@ const Header = ({ loggedIn }: Props) => {
               </div>
             </nav>
 
-            <nav className="grid gap-2 absolute right-0" style={{ top: '105px', display: `${isProfileDropdownOpen ? 'block' : 'none'}` }}>
+            <nav className="grid gap-2 absolute right-0 bg" style={{ top: '105px', display: `${isProfileDropdownOpen ? 'block' : 'none'}` }}>
               <div className="active selected item p-2 hover:opacity-80">
                 <Link href="/setting">Profile</Link>
               </div>
