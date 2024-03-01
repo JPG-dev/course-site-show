@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -29,14 +33,26 @@ body {
 }
 
 button, .button {
-  background: var(--darker-teal);
-  color: var(--coal-color);
   font-weight: 800;
+  background-color: var(--coal-color);
+  border-radius: 4px;
+  border: 1px solid var(--teal-color);
+  color: var(--teal-color);
+  transition: 0.3s;
 }
 
 button:hover {
   opacity: 0.8
 }
+
+
+button:hover, .button:hover {
+  background-color: var(--teal-color);
+  border: 1px solid var(--teal-color);
+  color: var(--background-color);
+}
+
+
 
 .hover:hover {
   scale: 1.01
@@ -122,6 +138,11 @@ h1, h2, h3, h4, h5 {
   padding: 8px;
 }
 
+.sidebar .active {
+  font-weight: 800;
+  color: var(--teal-color);
+}
+
 .courses-grid {
   display: grid;
   gap: 15px;
@@ -136,13 +157,32 @@ h1, h2, h3, h4, h5 {
   scale: 1.01
 }
 
-@media only screen and (max-width: 600px) {
-  .courses-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
 
+.sidebar, .metadata-content {
+  height: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+  }
+  .sidebar, .metadata-content {
+    height: auto;
+  }
+}
 
 @layer utilities {
   .text-balance {

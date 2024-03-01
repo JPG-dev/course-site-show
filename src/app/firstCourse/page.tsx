@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link'
 import ProfilePic from '../../../public/profilePicImage.jpeg'; // Import the image file
 import Header from '@/components/Header';
 import MultipleChoice from "@/components/MultipleChoice";
@@ -40,7 +41,7 @@ export default function Home() {
                 <Image src={ProfilePic} width="200" height="200" alt="First Name" className="w-full rounded-full" />
               </div>
               <div className="basis-1/2">
-                <div className="text-[20px] font-bold lg:mt-4">First Name</div>
+                <h3 className="text-[20px] font-bold lg:mt-4">First Name</h3>
                 <div className="text-base">Ex-Google/Stripe, launched Facebook in Asia, full-time startup investor/advisor</div>
               </div>
             </div>
@@ -48,7 +49,7 @@ export default function Home() {
               <div className="basis-1/2"><Image width="200" height="200" src={ProfilePic} alt="First Name" className="w-full rounded-full" />
               </div>
               <div className="basis-1/2">
-                <div className="text-[20px] font-bold lg:mt-4">First Name</div>
+                <h3 className="text-[20px] font-bold lg:mt-4">First Name</h3>
                 <div className="text-base">Greater China Region Marketing Agency Founder, ex-Facebook, ex-Management Consultant</div>
               </div>
             </div>
@@ -56,7 +57,7 @@ export default function Home() {
               <div className="basis-1/2"><Image width="200" height="200" src={ProfilePic} alt="First Name" className="w-full rounded-full" />
               </div>
               <div className="basis-1/2">
-                <div className="text-[20px] font-bold lg:mt-4">First Name</div>
+                <h3 className="text-[20px] font-bold lg:mt-4">First Name</h3>
                 <div className="text-base">Ex Founder, BD leader at AWS Startup Ecosystem South East Asia</div>
               </div>
             </div>
@@ -65,14 +66,14 @@ export default function Home() {
                 <Image width="200" height="200" src={ProfilePic} alt="First Name" className="w-full rounded-full" />
               </div>
               <div className="basis-1/2">
-                <div className="text-[20px] font-bold lg:mt-4">First Name</div>
+                <h3 className="text-[20px] font-bold lg:mt-4">First Name</h3>
                 <div className="text-base">Chief of Staff to CEO &amp; Director of Corporate Strategy, Lazada Singapore</div>
               </div>
             </div>
             <div className="flex lg:block space-x-4 lg:space-x-0"><div className="basis-1/2"><Image width="200" height="200" src={ProfilePic} alt="First Name" className="w-full rounded-full" />
             </div>
               <div className="basis-1/2">
-                <div className="text-[20px] font-bold lg:mt-4">First Name</div>
+                <h3 className="text-[20px] font-bold lg:mt-4">First Name</h3>
                 <div className="text-base">Bank of Singapore Private Banker, Fintech startup investor</div>
               </div>
             </div>
@@ -81,7 +82,7 @@ export default function Home() {
                 <Image width="200" height="200" src={ProfilePic} alt="First Name" className="w-full rounded-full" />
               </div>
               <div className="basis-1/2">
-                <div className="text-[20px] font-bold lg:mt-4">First Name</div>
+                <h3 className="text-[20px] font-bold lg:mt-4">First Name</h3>
                 <div className="text-base">ex-M&amp;A &amp; Finance management consultant, EdTech entrepreneur</div>
               </div>
             </div>
@@ -89,7 +90,7 @@ export default function Home() {
               <Image width="200" height="200" src={ProfilePic} alt="First Name" className="w-full rounded-full" />
             </div>
               <div className="basis-1/2">
-                <div className="text-[20px] font-bold lg:mt-4">First Name</div>
+                <h3 className="text-[20px] font-bold lg:mt-4">First Name</h3>
                 <div className="text-base">Cofounder &amp; CEO at Wifkain</div>
               </div>
             </div>
@@ -98,7 +99,7 @@ export default function Home() {
                 <Image width="200" height="200" src={ProfilePic} alt="First Name" className="w-full rounded-full" />
               </div>
               <div className="basis-1/2">
-                <div className="text-[20px] font-bold lg:mt-4">First Name</div>
+                <h3 className="text-[20px] font-bold lg:mt-4">First Name</h3>
                 <div className="text-base">Group Head at Lazada, ex-GM of OFO</div>
               </div>
             </div>
@@ -190,7 +191,10 @@ export default function Home() {
                     <div className="ml-2">Lifetime access</div>
                   </div>
                 </div>
-                <button onClick={() => setIsOpen(true)} data-podia-embed="link" className="w-full block text-center px-6 py-4 rounded font-bold" data-initialized="true">Buy Now</button>
+
+                <Link href="/checkout" className="w-full block text-center px-6 py-4 rounded font-bold button">
+                Buy Now
+                </Link>
                 </div>
             </div>
 
@@ -251,7 +255,10 @@ export default function Home() {
                     <div className="ml-2">Lifetime access</div>
                   </div>
                 </div>
-                <button onClick={() => setIsOpen(true)} data-podia-embed="link" className="w-full block text-center px-6 py-4 rounded font-bold" data-initialized="true">Buy Now</button></div>
+                <Link href="/checkout" className="w-full block text-center px-6 py-4 rounded font-bold button">
+                Buy Now
+                </Link>
+                </div>
             </div>
 
             <div className="w-full lg:w-1/3">
@@ -311,7 +318,10 @@ export default function Home() {
                     <div className="ml-2">Lifetime access</div>
                   </div>
                 </div>
-                <button onClick={() => setIsOpen(true)} data-podia-embed="link" className="w-full block text-center px-6 py-4 rounded font-bold" data-initialized="true">Buy Now</button></div>
+                <Link href="/checkout" className="w-full block text-center px-6 py-4 rounded font-bold button">
+                Buy Now
+                </Link>
+                </div>
             </div>
 
 
@@ -337,7 +347,7 @@ export default function Home() {
             <div>
               <div className=" text-xl font-display font-bold mb-2">How do I access the course after purchasing it?</div>
               <div className=" ml-0 sm:ml-4 text-lg mb-8">Check your email after purchasing the course. You should receive an email with a link to the course. If you do not receive this email please send me a message at
-                <a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 ">kyle@webdevsimplified.com</a>and I will help you work it out.</div>
+                <a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 "> kyle@webdevsimplified.com</a>and I will help you work it out.</div>
             </div>
             <div>
               <div className=" text-xl font-display font-bold mb-2">Does this course cover React, Express, jQuery, etc?</div>
@@ -352,23 +362,23 @@ export default function Home() {
             <div>
               <div className=" text-xl font-display font-bold mb-2">What if I buy the course and do not like it?</div>
               <div className=" ml-0 sm:ml-4 text-lg mb-8">While I am sure that you will love this course, if for any reason you do not, just email me at
-                <a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 ">kyle@webdevsimplified.com</a> within one year for a full refund.</div>
+                <a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 "> kyle@webdevsimplified.com</a> within one year for a full refund.</div>
             </div>
             <div>
               <div className=" text-xl font-display font-bold mb-2">Can I upgrade my bundle later?</div>
               <div className=" ml-0 sm:ml-4 text-lg mb-8">Yes! If you would like to update your bundle later just send me an email at
-                <a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 ">kyle@webdevsimplified.com</a>.
+                <a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 "> kyle@webdevsimplified.com</a>.
               </div>
             </div>
             <div>
               <div className=" text-xl font-display font-bold mb-2">Can I buy a team bundle?</div>
               <div className=" ml-0 sm:ml-4 text-lg mb-8">Of course! Just send me an email at
-                <a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 ">kyle@webdevsimplified.com</a>and we can workout a bundle for your entire team.</div>
+                <a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 "> kyle@webdevsimplified.com</a>and we can workout a bundle for your entire team.</div>
             </div>
             <div>
               <div className=" text-xl font-display font-bold mb-2">Any other questions?</div><div className=" ml-0 sm:ml-4 text-lg mb-8">If you have any more questions about the course email me async function name(params:type) {
 
-              }<a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 ">kyle@webdevsimplified.com</a> and I will answer any questions you have.</div>
+              }<a href="mailto:kyle@webdevsimplified.com" className="  border-b-2 font-bold border-blue-500 "> kyle@webdevsimplified.com</a> and I will answer any questions you have.</div>
             </div>
           </div>
         </div>

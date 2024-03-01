@@ -41,7 +41,7 @@ export default function Home() {
                 <h3 className="text-sm font-bold">SELF-PACED ONLINE MASTERCLASS</h3>
                 <div className="text-32px py-6 font-bold  g">6-Month VC Launchpad</div>
                 <div className="text-base">Enroll in our online course designed for emerging investors seeking to pick up venture capital fundamentals at their own pace. Get access to over 30 hours of video content, exercises and materials curated by industry veterans to hit the ground running as you kickstart your early-stage investing journey. </div>
-                <div className="text-base font-bold mt-6 text-center button py-2 px-4 rounded">LEARN MORE</div>
+                <button className="text-base font-bold mt-6 text-center button py-2 px-4 rounded w-full">LEARN MORE</button>
               </div>
             </Link>
 
@@ -51,7 +51,7 @@ export default function Home() {
                 <h3 className="text-sm font-bold">SELF-PACED ONLINE MASTERCLASS</h3>
                 <div className="text-32px py-6 font-bold">6-Month VC Launchpad</div>
                 <div className="text-base">Enroll in our online course designed for emerging investors seeking to pick up venture capital fundamentals at their own pace. Get access to over 30 hours of video content, exercises and materials curated by industry veterans to hit the ground running as you kickstart your early-stage investing journey. </div>
-                <div className="text-base font-bold mt-6 text-center button py-2 px-4 rounded">LEARN MORE</div>
+                <button className="text-base font-bold mt-6 text-center button py-2 px-4 rounded w-full">LEARN MORE</button>
               </div>
             </Link>
           </div>

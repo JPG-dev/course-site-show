@@ -43,7 +43,7 @@ const Header = ({ loggedIn }: Props) => {
               {loggedIn ? null : <button onClick={() => setIsModalOpen(true)} className="font-bold py-2 px-4 rounded">
                 Sign up
               </button>}
-              {loggedIn ? <div id="avatar" className='relative h-10 w-10 bg-white rounded-full cursor-pointer' onClick={() => setIsProfileDropdownActive(!isProfileDropdownOpen)}>
+              {loggedIn ? <div id="avatar" className='relative h-10 w-10 bg-white rounded-full cursor-pointer text-black' onClick={() => setIsProfileDropdownActive(!isProfileDropdownOpen)}>
                 <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '>AJ</span>
               </div> : null}
             </nav>
