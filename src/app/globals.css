@@ -41,6 +41,10 @@ button, .button {
   transition: 0.3s;
 }
 
+input {
+  color: var(--background-color);
+}
+
 button:hover {
   opacity: 0.8
 }
@@ -81,10 +85,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .checkbox {
-  background: white;
+  background-color: var(--gray-color);
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  transition: 0.3s;
+}
+
+.checkbox:hover {
+  background-color: var(--teal-color);
 }
 
 .bg {
