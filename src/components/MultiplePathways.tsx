@@ -1,7 +1,8 @@
 "use client"
 import React, { useState } from 'react'
 import Image from 'next/image';
-import ProfilePic from '../../public/profilePicImage.jpeg'
+import ProfilePic from '../../public/profilePicImage.jpeg';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const MultiplePathways = () => {
     const [selectedTab, setSelectedTab] = useState<number>(1)
@@ -49,11 +50,15 @@ const MultiplePathways = () => {
 
                 <div className="lg:col-span-3 xl:col-span-5 border">
                     <div className="h-full">
-                        <div className={`fade-in grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-4 lg:space-x-4 lg:space-y-0 justify-around p-4 h-full animate-fade-in-right-little ${selectedTab === 1 ? 'block' : 'hidden'}`}>
+                        <div className={`fade-in grid space-y-4 lg:space-x-4 lg:space-y-0 justify-around p-4 h-full animate-fade-in-right-little ${selectedTab === 1 ? 'block' : 'hidden'}`}>
                             <div className="lg:self-center">
                                 <div className="flex flex-col items-center">
                                     <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
-                                    <div className=" lg:text-base mt-4 flex items-center">Kevin Williams</div>
+                                    <div className='flex items-center gap-2 mt-4'>
+                                        <div className=" lg:text-base flex items-center">Kevin Williams</div>
+                                        <LinkedInIcon />
+                                    </div>
+
                                     <div className=" text-sm text-center">Junior Analyst</div>
                                     <div className="text-sm text-center">Stacks Ventures</div>
                                 </div>
@@ -61,16 +66,12 @@ const MultiplePathways = () => {
                             <div className="lg:self-center">
                                 <div className="flex flex-col items-center">
                                     <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
-                                    <div className=" lg:text-base mt-4 flex items-center">Chelsey Pua</div>
+                                    <div className='flex items-center gap-2 mt-4'>
+                                        <div className=" lg:text-base flex items-center">Chelsey Pua</div>
+                                        <LinkedInIcon />
+                                    </div>
+
                                     <div className=" text-sm text-center">Investment Analyst</div>
-                                    <div className="text-sm text-center">Insignia Ventures Partners</div>
-                                </div>
-                            </div>
-                            <div className="lg:self-center">
-                                <div className="flex flex-col items-center">
-                                    <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
-                                    <div className=" lg:text-base mt-4 flex items-center">Yang En Tan</div>
-                                    <div className=" text-sm text-center">Investments</div>
                                     <div className="text-sm text-center">Insignia Ventures Partners</div>
                                 </div>
                             </div>
@@ -78,19 +79,27 @@ const MultiplePathways = () => {
 
 
 
-                        <div className={`fade-in grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-y-4 lg:space-x-4 lg:space-y-0 justify-around p-4 h-full animate-fade-in-right-little ${selectedTab === 2 ? 'block' : 'hidden'}`}>
+                        <div className={`fade-in grid space-y-4 lg:space-x-4 lg:space-y-0 justify-around p-4 h-full animate-fade-in-right-little ${selectedTab === 2 ? 'block' : 'hidden'}`}>
                             <div className="lg:self-center">
                                 <div className="flex flex-col items-center">
-                                <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
-                                    <div className=" lg:text-base mt-4 flex items-center">Robert Tan</div>
+                                    <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
+                                    <div className='flex items-center gap-2 mt-4'>
+                                        <div className=" lg:text-base flex items-center">Robert Tan</div>
+                                        <LinkedInIcon />
+                                    </div>
+
                                     <div className=" text-sm text-center">Co-founder</div>
                                     <div className="text-sm text-center">Joybox</div>
                                 </div>
                             </div>
                             <div className="lg:self-center">
                                 <div className="flex flex-col items-center">
-                                <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
-                                    <div className=" lg:text-base mt-4 flex items-center">Sara Sofyan</div>
+                                    <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
+                                    <div className='flex items-center gap-2 mt-4'>
+                                    <div className=" lg:text-base flex items-center">Sara Sofyan</div>
+                                    <LinkedInIcon />
+                                    </div>
+                                    
                                     <div className=" text-sm text-center">Co-founder and CEO</div>
                                     <div className="text-sm text-center">Wifkain</div>
                                 </div>
@@ -98,19 +107,27 @@ const MultiplePathways = () => {
                         </div>
 
 
-                        <div className={`fade-in grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-y-4 lg:space-x-4 lg:space-y-0 justify-around p-4 h-full animate-fade-in-right-little ${selectedTab === 3 ? 'block' : 'hidden'}`}>
+                        <div className={`fade-in grid space-y-4 lg:space-x-4 lg:space-y-0 justify-around p-4 h-full animate-fade-in-right-little ${selectedTab === 3 ? 'block' : 'hidden'}`}>
                             <div className="lg:self-center">
                                 <div className="flex flex-col items-center">
-                                <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
-                                    <div className=" lg:text-base mt-4 flex items-center">Kartik Jain</div>
+                                    <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
+                                    <div className='flex items-center gap-2 mt-4'>
+                                    <div className=" lg:text-base flex items-center">Kartik Jain</div>
+                                    <LinkedInIcon />
+                                    </div>
+                                    
                                     <div className=" text-sm text-center">Manager</div>
                                     <div className="text-sm text-center">Alpha Venture DAO</div>
                                 </div>
                             </div>
                             <div className="lg:self-center">
                                 <div className="flex flex-col items-center">
-                                <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
-                                    <div className=" lg:text-base mt-4 flex items-center">Hester Spiegel</div>
+                                    <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
+                                    <div className='flex items-center gap-2 mt-4'>
+                                    <div className=" lg:text-base flex items-center">Hester Spiegel</div>
+                                    <LinkedInIcon />
+                                    </div>
+                                    
                                     <div className=" text-sm text-center">Co-Founder</div>
                                     <div className="text-sm text-center">Epic Angels</div>
                                 </div>
@@ -118,20 +135,28 @@ const MultiplePathways = () => {
                         </div>
 
 
-                        <div className={`fade-in grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 space-y-4 lg:space-x-4 lg:space-y-0 justify-around p-4 h-full animate-fade-in-right-little ${selectedTab === 4 ? 'block' : 'hidden'}`}>
+                        <div className={`fade-in grid space-y-4 lg:space-x-4 lg:space-y-0 justify-around p-4 h-full animate-fade-in-right-little ${selectedTab === 4 ? 'block' : 'hidden'}`}>
                             <div className="lg:self-center">
                                 <div className="flex flex-col items-center">
-                                <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
-                                    <div className=" lg:text-base mt-4 flex items-center">Alexandra Tan
+                                    <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
+                                    <div className='flex items-center gap-2 mt-4'>
+                                    <div className=" lg:text-base flex items-center">Alexandra Tan</div>
+                                    <LinkedInIcon />
                                     </div>
+                                    
                                     <div className=" text-sm text-center">CEO Office</div>
                                     <div className="text-sm text-center">Aspire</div>
                                 </div>
                             </div>
                             <div className="lg:self-center">
                                 <div className="flex flex-col items-center">
-                                <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
-                                    <div className=" lg:text-base mt-4 flex items-center">Jui Takle</div>
+                                    <Image src={ProfilePic} width="200" height="200" alt="First Name" className="rounded-full" />
+
+                                    <div className='flex items-center gap-2 mt-4'>
+                                    <div className=" lg:text-base flex items-center">Jui Takle</div>
+                                    <LinkedInIcon />
+                                    </div>
+                                    
                                     <div className="text-sm text-center">Strategic Development</div>
                                     <div className="text-sm text-center">Tonik</div>
                                 </div>
