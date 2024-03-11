@@ -39,7 +39,6 @@ const Home = () => {
               <HomeCourse price="$230" />
             </>
           )}
-
           {activeTab === 'my' && (
             <>
               <HomeCourse own />

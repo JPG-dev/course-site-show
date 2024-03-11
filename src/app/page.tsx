@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Header from "@/components/Header";
 import Experience from "@/components/Experience"
 import Footer from "@/components/Footer"
+import MultiplePathways from '@/components/MultiplePathways';
 
 export default function Home() {
   return (
@@ -58,28 +59,30 @@ export default function Home() {
         </div>
       </section>
 
+    <MultiplePathways />
+
       <section className="py-8 px-8 lg:px-0">
         <h2 className="text-3xl font-extrabold text-center mb-5">NEED A HAND?</h2>
         <div className="md:w-1/2 text-center text-paragraph mx-auto">Check out our free resources that help propel your startup or career forward.</div>
-        
-          <div className="p-8 md:py-[35px] md:px-[65px] rounded lg:w-2/3 mx-auto my-8">
-              <div className="lg:basis-9/12 flex flex-col justify-between bg p-12 rounded">
-                <h2 className="text-3xl font-extrabold text-center text-32px mb-4 lg:text-left">Funds, Accelerators &amp; Incubators</h2>
-                <div className=" font-base mb-8 text-center lg:text-left">Get an overview of the players in the startup ecosystem (Southeast Asia and beyond) and decide which provides the most value-add for your company.</div>
-                <div className="flex items-start flex-col lg:flex-row lg:space-y-0 space-y-4 lg:space-x-8">
-                  <div className="lg:basis-2/3 w-full">
-                    <div className="w-full">
-                      <input type="text" placeholder="Email address" className="rounded w-full px-4 py-3 text-base h-[44px] outline-0 placeholder-gray duration-500 w-full" value="" />
-                    </div>
-                  </div>
-                  <div className="lg:basis-1/3 w-full">
-                    <button className="button duration-500 inline-flex items-center justify-center h-[44px] font-bold w-full">Access the list</button>
-                  </div>
+
+        <div className="p-8 md:py-[35px] md:px-[65px] rounded lg:w-2/3 mx-auto my-8">
+          <div className="lg:basis-9/12 flex flex-col justify-between bg p-12 rounded">
+            <h2 className="text-3xl font-extrabold text-center text-32px mb-4 lg:text-left">Funds, Accelerators &amp; Incubators</h2>
+            <div className=" font-base mb-8 text-center lg:text-left">Get an overview of the players in the startup ecosystem (Southeast Asia and beyond) and decide which provides the most value-add for your company.</div>
+            <div className="flex items-start flex-col lg:flex-row lg:space-y-0 space-y-4 lg:space-x-8">
+              <div className="lg:basis-2/3 w-full">
+                <div className="w-full">
+                  <input type="text" placeholder="Email address" className="rounded w-full px-4 py-3 text-base h-[44px] outline-0 placeholder-gray duration-500 w-full" value="" />
                 </div>
               </div>
-            
+              <div className="lg:basis-1/3 w-full">
+                <button className="button duration-500 inline-flex items-center justify-center h-[44px] font-bold w-full">Access the list</button>
+              </div>
+            </div>
           </div>
-        
+
+        </div>
+
       </section>
 
       <Footer />

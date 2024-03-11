@@ -10,13 +10,11 @@ html {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
   --background-color: #0B0C10;
   --coal-color: #1F2833;
   --gray-color: #C5C6C7;
   --teal-color: #66FCF1;
   --darker-teal: #45A29E;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +23,22 @@ html {
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+.bg-coal {
+  background-color: var(--coal-color);
+}
+
+.bg-gray {
+  background-color: var(--gray-color);
+}
+
+.bg-teal {
+  background-color: var(--teal-color);
+}
+
+.bg-darker-teal {
+  background-color: var(--darker-teal);
 }
 
 body {
@@ -55,8 +69,6 @@ button:hover, .button:hover {
   border: 1px solid var(--teal-color);
   color: var(--background-color);
 }
-
-
 
 .hover:hover {
   scale: 1.01
@@ -164,6 +176,18 @@ h1, h2, h3, h4, h5 {
 
 .course-card:hover {
   scale: 1.01
+}
+
+.multiple-pathways .border {
+  border-color: var(--teal-color);
+}
+
+.multiple-pathways .group {
+  transition: 0.3s;
+}
+
+.multiple-pathways .group:hover {
+  opacity: 1;
 }
 
 
