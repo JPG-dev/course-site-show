@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import Image from 'next/image';
-import ProfilePic from '../../../public/profilePicImage.jpeg'; // Im
+import ProfilePic from '../../public/profilePicImage.jpeg'
 
 const MultiplePathways = () => {
     const [selectedTab, setSelectedTab] = useState<number>(1)
